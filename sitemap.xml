@@ -2,78 +2,98 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://vs-intern.github.io/Publishing-repo/</loc>
-         <lastmod>2026-09-20</lastmod>
+         <lastmod>2026-09-25</lastmod>
+    </url>
+    <url>
+         <loc>https://vs-intern.github.io/Publishing-repo/explore/</loc>
+         <lastmod>2026-09-25</lastmod>
     </url>
     <url>
          <loc>https://vs-intern.github.io/Publishing-repo/introduction/</loc>
-         <lastmod>2026-09-20</lastmod>
+         <lastmod>2026-09-25</lastmod>
+    </url>
+    <url>
+         <loc>https://vs-intern.github.io/Publishing-repo/about/corrections/</loc>
+         <lastmod>2026-09-25</lastmod>
+    </url>
+    <url>
+         <loc>https://vs-intern.github.io/Publishing-repo/about/editions/</loc>
+         <lastmod>2026-09-25</lastmod>
+    </url>
+    <url>
+         <loc>https://vs-intern.github.io/Publishing-repo/about/image-credits/</loc>
+         <lastmod>2026-09-25</lastmod>
+    </url>
+    <url>
+         <loc>https://vs-intern.github.io/Publishing-repo/about/method/</loc>
+         <lastmod>2026-09-25</lastmod>
     </url>
     <url>
          <loc>https://vs-intern.github.io/Publishing-repo/appendices/collecting/</loc>
-         <lastmod>2026-09-20</lastmod>
+         <lastmod>2026-09-25</lastmod>
     </url>
     <url>
          <loc>https://vs-intern.github.io/Publishing-repo/appendices/contribute/</loc>
-         <lastmod>2026-09-20</lastmod>
+         <lastmod>2026-09-25</lastmod>
     </url>
     <url>
          <loc>https://vs-intern.github.io/Publishing-repo/appendices/glossary/</loc>
-         <lastmod>2026-09-20</lastmod>
+         <lastmod>2026-09-25</lastmod>
     </url>
     <url>
          <loc>https://vs-intern.github.io/Publishing-repo/appendices/machine-matrix/</loc>
-         <lastmod>2026-09-20</lastmod>
+         <lastmod>2026-09-25</lastmod>
     </url>
     <url>
          <loc>https://vs-intern.github.io/Publishing-repo/appendices/sources/</loc>
-         <lastmod>2026-09-20</lastmod>
+         <lastmod>2026-09-25</lastmod>
     </url>
     <url>
          <loc>https://vs-intern.github.io/Publishing-repo/appendices/timeline/</loc>
-         <lastmod>2026-09-20</lastmod>
+         <lastmod>2026-09-25</lastmod>
     </url>
     <url>
          <loc>https://vs-intern.github.io/Publishing-repo/chapters/1977-generation/</loc>
-         <lastmod>2026-09-20</lastmod>
+         <lastmod>2026-09-25</lastmod>
     </url>
     <url>
          <loc>https://vs-intern.github.io/Publishing-repo/chapters/amstrad/</loc>
-         <lastmod>2026-09-20</lastmod>
+         <lastmod>2026-09-25</lastmod>
     </url>
     <url>
          <loc>https://vs-intern.github.io/Publishing-repo/chapters/apple-ii/</loc>
-         <lastmod>2026-09-20</lastmod>
+         <lastmod>2026-09-25</lastmod>
     </url>
     <url>
          <loc>https://vs-intern.github.io/Publishing-repo/chapters/atari/</loc>
-         <lastmod>2026-09-20</lastmod>
+         <lastmod>2026-09-25</lastmod>
     </url>
     <url>
          <loc>https://vs-intern.github.io/Publishing-repo/chapters/bbc-micro/</loc>
-         <lastmod>2026-09-20</lastmod>
+         <lastmod>2026-09-25</lastmod>
     </url>
     <url>
          <loc>https://vs-intern.github.io/Publishing-repo/chapters/commodore/</loc>
-         <lastmod>2026-09-20</lastmod>
+         <lastmod>2026-09-25</lastmod>
     </url>
     <url>
          <loc>https://vs-intern.github.io/Publishing-repo/chapters/everyday-life/</loc>
-         <lastmod>2026-09-20</lastmod>
+         <lastmod>2026-09-25</lastmod>
     </url>
     <url>
          <loc>https://vs-intern.github.io/Publishing-repo/chapters/legacy/</loc>
-         <lastmod>2026-09-20</lastmod>
+         <lastmod>2026-09-25</lastmod>
     </url>
     <url>
          <loc>https://vs-intern.github.io/Publishing-repo/chapters/sinclair/</loc>
-         <lastmod>2026-09-20</lastmod>
+         <lastmod>2026-09-25</lastmod>
     </url>
     <url>
          <loc>https://vs-intern.github.io/Publishing-repo/chapters/ti-99/</loc>
-         <lastmod>2026-09-20</lastmod>
+         <lastmod>2026-09-25</lastmod>
     </url>
     <url>
          <loc>https://vs-intern.github.io/Publishing-repo/chapters/trs-80/</loc>
-         <lastmod>2026-09-20</lastmod>
+         <lastmod>2026-09-25</lastmod>
     </url>
 </urlset>
