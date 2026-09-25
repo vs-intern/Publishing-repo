@@ -1,0 +1,63 @@
+name: Share a recollection
+description: Contribute a clearly labelled memory of living with an 8-bit computer
+title: "[Recollection]: "
+labels:
+  - recollection
+  - needs-triage
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Recollections can preserve details absent from manuals, but memory is not treated as verified historical fact. Editors may seek corroboration before quoting or summarizing a submission. Do not name private people without their permission.
+  - type: input
+    id: subject
+    attributes:
+      label: Machine, activity, or place
+      placeholder: "Example: Loading programs on a ZX Spectrum at a school club"
+    validations:
+      required: true
+  - type: input
+    id: where_when
+    attributes:
+      label: Approximate place and date
+      placeholder: "Leeds, UK, around 1984"
+    validations:
+      required: true
+  - type: input
+    id: configuration
+    attributes:
+      label: Machine, model, and configuration
+      description: Include memory, storage, display, peripheral, or revision details if remembered.
+  - type: textarea
+    id: memory
+    attributes:
+      label: What do you remember?
+      description: Describe the physical routine, people, setting, sounds, frustrations, work, play, or community around the machine.
+    validations:
+      required: true
+  - type: textarea
+    id: supporting_material
+    attributes:
+      label: Supporting material or possible corroboration
+      description: Link any lawful photograph, manual, school record, advert, magazine, software, or another witness that may help editors check the memory.
+  - type: dropdown
+    id: permission
+    attributes:
+      label: Editorial permission
+      options:
+        - Editors may follow up through this public issue only
+        - Editors may use this as a research lead but must not quote my account name
+        - I am sharing for discussion and do not grant quotation permission
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Submission checks
+      options:
+        - label: I understand this issue and my GitHub account name are public; this form cannot provide anonymity.
+          required: true
+        - label: I understand this will remain labelled as recollection unless corroborated.
+          required: true
+        - label: I have not included private information or rights-problematic material.
+          required: true

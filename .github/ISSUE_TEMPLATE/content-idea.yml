@@ -1,0 +1,94 @@
+name: Content idea
+description: Propose a focused, sourceable extension to The 8-Bit Home
+title: "[Content idea]: "
+labels:
+  - content-idea
+  - needs-triage
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping the field guide grow. Reader reactions are an advisory interest signal, not factual validation or a publication commitment. Please do not include personal data or upload material unless you have the right to share it.
+
+  - type: input
+    id: proposed-title
+    attributes:
+      label: Proposed title
+      description: Give the idea a short, specific working title.
+      placeholder: "Example: A machine, practice or community — the question it answers"
+    validations:
+      required: true
+
+  - type: textarea
+    id: reader-promise
+    attributes:
+      label: One-sentence reader promise
+      description: What will a reader understand after this addition that the book does not currently explain?
+      placeholder: "Show how…"
+    validations:
+      required: true
+
+  - type: textarea
+    id: missing-coverage
+    attributes:
+      label: Missing or incorrect coverage
+      description: Describe the gap or correction and link the relevant current page when possible.
+    validations:
+      required: true
+
+  - type: textarea
+    id: scope
+    attributes:
+      label: Period, region and exact machines
+      description: Name the dates, countries or markets, machines, models and revisions that belong in scope—and important exclusions.
+      placeholder: |
+        Period:
+        Region or market:
+        Machines/models/revisions:
+        Exclusions:
+    validations:
+      required: true
+
+  - type: textarea
+    id: sources
+    attributes:
+      label: Up to three inspectable sources
+      description: Link period documentation, museum records or specialist archives and briefly note what each supports. Suggestions begin research; they do not validate a claim by themselves.
+      placeholder: |
+        1. URL — supports…
+        2. URL — supports…
+        3. URL — supports…
+    validations:
+      required: true
+
+  - type: textarea
+    id: newcomer-benefit
+    attributes:
+      label: Benefit for a newcomer
+      description: Which unfamiliar term, experience or consequence should the addition make clear?
+    validations:
+      required: true
+
+  - type: textarea
+    id: accessibility-visuals
+    attributes:
+      label: Accessibility and visual suggestions
+      description: Note useful diagrams, meaningful alt-text needs, sensory details that require prose, or visual approaches to avoid.
+
+  - type: textarea
+    id: overlaps
+    attributes:
+      label: Overlaps or conflicts
+      description: Point out related chapters, existing issues, contradictory sources or places where this idea may duplicate current coverage.
+
+  - type: checkboxes
+    id: acknowledgements
+    attributes:
+      label: Submission checks
+      options:
+        - label: I understand that reactions are advisory and this issue is not a publication commitment.
+          required: true
+        - label: I have not included private personal information or uploaded rights-problematic material.
+          required: true
+        - label: I have distinguished source-backed facts from memories or interpretation.
+          required: true

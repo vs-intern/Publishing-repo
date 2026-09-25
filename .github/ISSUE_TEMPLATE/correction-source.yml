@@ -1,0 +1,58 @@
+name: Correction or source lead
+description: Report a possible error or point editors to stronger evidence
+title: "[Correction/source]: "
+labels:
+  - correction
+  - needs-triage
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for helping improve the historical record. A source lead starts review; it does not change the book automatically. Please do not include private information or upload material you do not have the right to share.
+  - type: input
+    id: page
+    attributes:
+      label: Page and passage
+      description: Link the page and quote or describe the specific claim.
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: Proposed correction or source lead
+      description: Explain what may be wrong, incomplete, or newly documented.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence and exact location
+      description: Link the manual, catalogue, museum record, period article, interview, or other source and give a page, section, object number, or timestamp when possible.
+    validations:
+      required: true
+  - type: dropdown
+    id: evidence_type
+    attributes:
+      label: Evidence type
+      options:
+        - Period manual, catalogue, advertisement, review, broadcast, or software
+        - Museum, library, university, or institutional record
+        - Named oral history or interview
+        - Specialist archive or database
+        - Community discussion or personal recollection
+    validations:
+      required: true
+  - type: textarea
+    id: qualification
+    attributes:
+      label: Model, revision, region, and date qualifications
+      description: Note any configuration or market to which the correction does—or does not—apply.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Submission checks
+      options:
+        - label: I have separated documented evidence from memory or inference.
+          required: true
+        - label: I have not included private information or rights-problematic uploads.
+          required: true
