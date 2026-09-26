@@ -92,12 +92,75 @@ body { letter-spacing: .005em; }
   font-weight: 800;
   border-radius: 2px;
 }
-.hero__button--ghost { color: white !important; background: rgba(10, 20, 28, .4); }
+.hero__button--ghost { color: white !important; background: #172330; }
 .hero__button:focus-visible,
 .machine-card:focus-visible,
+.feature-card:focus-visible,
 .md-button:focus-visible {
   outline: 3px solid var(--retro-cyan);
   outline-offset: 3px;
+}
+
+/*
+ * Material's unfilled buttons inherit the link colour. That becomes too faint
+ * against the dark palette, especially after a link has been visited. Keep
+ * every call to action on an opaque surface and pin all interaction states to
+ * tested foreground/background pairs.
+ */
+.md-typeset .md-button,
+.md-typeset .md-button:visited {
+  border: 2px solid #8f452f;
+  border-radius: 3px;
+  background: #e8dcc3;
+  color: #172330 !important;
+  box-shadow: 3px 3px 0 rgba(23, 35, 48, .18);
+  font-weight: 800;
+  text-decoration: none;
+}
+.md-typeset .md-button:hover,
+.md-typeset .md-button:focus-visible {
+  border-color: #6f321f;
+  background: #d7c59f;
+  color: #101621 !important;
+}
+.md-typeset .md-button--primary,
+.md-typeset .md-button--primary:visited {
+  border-color: #96351f;
+  background: #b8452e;
+  color: #fff !important;
+}
+.md-typeset .md-button--primary:hover,
+.md-typeset .md-button--primary:focus-visible {
+  border-color: #742511;
+  background: #96351f;
+  color: #fff !important;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .md-button,
+[data-md-color-scheme="slate"] .md-typeset .md-button:visited {
+  border-color: #55daca;
+  background: #243447;
+  color: #fff8e8 !important;
+  box-shadow: 3px 3px 0 rgba(66, 217, 200, .24);
+}
+[data-md-color-scheme="slate"] .md-typeset .md-button:hover,
+[data-md-color-scheme="slate"] .md-typeset .md-button:focus-visible {
+  border-color: #8ceade;
+  background: #31506a;
+  color: #fff !important;
+}
+[data-md-color-scheme="slate"] .md-typeset .md-button--primary,
+[data-md-color-scheme="slate"] .md-typeset .md-button--primary:visited {
+  border-color: #8ff0af;
+  background: #65e09a;
+  color: #081019 !important;
+  box-shadow: 3px 3px 0 rgba(101, 224, 154, .24);
+}
+[data-md-color-scheme="slate"] .md-typeset .md-button--primary:hover,
+[data-md-color-scheme="slate"] .md-typeset .md-button--primary:focus-visible {
+  border-color: #ffe09a;
+  background: #f6c85f;
+  color: #081019 !important;
 }
 
 .chapter-number {
@@ -133,6 +196,17 @@ body { letter-spacing: .005em; }
 .machine-card span, .stat-card span { font-size: .78rem; color: var(--retro-muted); }
 .feature-card h3 { margin: 0 0 .35rem; font-size: 1rem; }
 .feature-card p { margin: 0; font-size: .87rem; }
+.md-typeset a.feature-card,
+.md-typeset a.feature-card:visited {
+  color: var(--md-default-fg-color) !important;
+  text-decoration: none;
+}
+.md-typeset a.feature-card:hover,
+.md-typeset a.feature-card:focus-visible {
+  border-color: var(--retro-cyan);
+  background: var(--retro-paper);
+  color: var(--md-default-fg-color) !important;
+}
 
 .terminal {
   margin: 1.6rem 0;
