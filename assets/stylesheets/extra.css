@@ -93,12 +93,20 @@ body { letter-spacing: .005em; }
   border-radius: 2px;
 }
 .hero__button--ghost { color: white !important; background: #172330; }
-.hero__button:focus-visible,
+.hero__button:focus-visible {
+  outline: 3px solid var(--retro-cyan);
+  outline-offset: 3px;
+}
 .machine-card:focus-visible,
 .feature-card:focus-visible,
 .md-button:focus-visible {
-  outline: 3px solid var(--retro-cyan);
+  outline: 3px solid #7a2f1c;
   outline-offset: 3px;
+}
+[data-md-color-scheme="slate"] .machine-card:focus-visible,
+[data-md-color-scheme="slate"] .feature-card:focus-visible,
+[data-md-color-scheme="slate"] .md-button:focus-visible {
+  outline-color: var(--retro-cyan);
 }
 
 /*
