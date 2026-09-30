@@ -227,6 +227,109 @@ body { letter-spacing: .005em; }
 .timeline-strip h2 { margin: 1.2rem 0 .15rem; color: var(--retro-orange); font-size: 1rem; }
 .timeline-strip p { margin-top: 0; }
 
+/*
+ * Semantic flow diagrams. The ordered list remains useful without CSS; colour
+ * and arrows reinforce relationships but never carry them alone.
+ */
+.diagram-flow {
+  margin: 2rem 0;
+  padding: clamp(1rem, 2vw, 1.5rem);
+  border: 1px solid #8f452f;
+  border-radius: 3px;
+  background: var(--retro-paper);
+  box-shadow: 5px 5px 0 color-mix(in srgb, var(--retro-cyan) 14%, transparent);
+}
+.diagram-flow__title {
+  margin: 0 0 .35rem !important;
+  color: var(--md-default-fg-color) !important;
+  font-size: 1.05rem !important;
+  letter-spacing: -.015em !important;
+}
+.diagram-flow__summary { margin: 0 0 1rem; }
+.md-typeset ol.diagram-flow__track {
+  display: grid;
+  grid-template-columns: repeat(var(--flow-columns, 3), minmax(0, 1fr));
+  gap: .85rem;
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none !important;
+  counter-reset: flow-step;
+}
+.diagram-flow__track > li {
+  min-width: 0;
+  position: relative;
+  padding: .9rem 1rem;
+  border: 1px solid color-mix(in srgb, #8f452f 55%, transparent);
+  border-top: .25rem solid #8f452f;
+  background: var(--retro-cream);
+  counter-increment: flow-step;
+}
+.diagram-flow__track > li::before {
+  content: counter(flow-step, decimal-leading-zero);
+  display: block;
+  margin-bottom: .35rem;
+  color: #7a2f1c;
+  font: 800 .7rem/1 ui-monospace, SFMono-Regular, Menlo, monospace;
+  letter-spacing: .12em;
+}
+.diagram-flow__track h3 {
+  margin: 0 0 .35rem;
+  color: var(--md-default-fg-color);
+  font-size: .96rem;
+  letter-spacing: -.01em;
+}
+.diagram-flow__track p { margin: .25rem 0 0; font-size: .84rem; }
+.diagram-flow__relation {
+  display: block;
+  margin-top: .75rem;
+  padding-top: .55rem;
+  border-top: 1px dashed color-mix(in srgb, #8f452f 55%, transparent);
+  color: #5b341f;
+  font: 750 .72rem/1.35 ui-monospace, SFMono-Regular, Menlo, monospace;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+.diagram-flow__branches {
+  margin: .55rem 0 0 !important;
+  padding-left: 1rem !important;
+  font-size: .8rem;
+}
+.diagram-flow__aside {
+  margin-top: .85rem;
+  padding: .8rem 1rem;
+  border: 1px dashed #8f452f;
+  border-left: .3rem solid #8f452f;
+  background: #e8dcc3;
+  color: #172330;
+  font-size: .84rem;
+}
+.diagram-flow__aside p { margin: .25rem 0 0; }
+.diagram-flow figcaption {
+  margin-top: 1rem;
+  color: #5f584d;
+  font-size: .76rem;
+}
+[data-md-color-scheme="slate"] .diagram-flow {
+  border-color: #55daca;
+  background: #171f29;
+}
+[data-md-color-scheme="slate"] .diagram-flow__track > li {
+  border-color: color-mix(in srgb, #55daca 55%, transparent);
+  border-top-color: #55daca;
+  background: #111923;
+}
+[data-md-color-scheme="slate"] .diagram-flow__track > li::before,
+[data-md-color-scheme="slate"] .diagram-flow__relation { color: #8ff0af; }
+[data-md-color-scheme="slate"] .diagram-flow__relation {
+  border-top-color: color-mix(in srgb, #55daca 55%, transparent);
+}
+[data-md-color-scheme="slate"] .diagram-flow__aside {
+  border-color: #55daca;
+  background: #111923;
+  color: #e9e2d4;
+}
+[data-md-color-scheme="slate"] .diagram-flow figcaption { color: #b8b0a2; }
+
 .md-typeset table:not([class]) { font-size: .78rem; }
 .md-typeset table:not([class]) th { background: #172330; color: #fff8e8; }
 .source-note { color: var(--retro-muted); font-size: .78rem; }
@@ -234,11 +337,14 @@ body { letter-spacing: .005em; }
 @media (max-width: 44rem) {
   .hero { min-height: 34rem; background-position: 62% center; }
   .hero::before { background: linear-gradient(0deg, rgba(5,10,17,.95) 0%, rgba(5,10,17,.68) 70%, rgba(5,10,17,.2)); }
+  .md-typeset ol.diagram-flow__track { grid-template-columns: 1fr; }
 }
 
 @media print {
   .md-header, .md-sidebar, .md-footer { display: none !important; }
   .md-main__inner, .md-content { max-width: none; margin: 0; }
   .hero { margin: 0; min-height: 85vh; break-after: page; }
+  .diagram-flow { box-shadow: none; break-inside: avoid; }
+  .md-typeset ol.diagram-flow__track { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   a { color: inherit; }
 }

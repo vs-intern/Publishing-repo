@@ -700,6 +700,23 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="A team of specialist chips">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#atari-display-flow-title" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A source-bounded Atari display path
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1526,6 +1543,23 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="A team of specialist chips">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#atari-display-flow-title" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A source-bounded Atari display path
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1590,6 +1624,10 @@ presented different personalities. The lower-cost 400 used a pressure-sensitive
 membrane keyboard and a closed, friendly form. The 800 offered a proper keyboard,
 more accessible expansion and a more professional appearance. One leaned toward
 the game-playing family; the other could plausibly sit in a study.</p>
+<figure class="chapter-figure">
+<p><img alt="A beige Atari 800 computer viewed from the rear and above, showing its dark full-travel keyboard, vented upper case, rear and side openings, and a connected cable." height="683" loading="lazy" src="../../assets/images/documentary/atari-800.webp" style="display: block; width: 100%; height: auto;" width="1200" /></p>
+<figcaption>A surviving Atari 800 photographed as an isolated object in modern conditions. Photo: Evan-Amos / Wikimedia Commons (public domain); it is not evidence of a period household setup.</figcaption>
+</figure>
 <h2 id="a-team-of-specialist-chips">A team of specialist chips<a class="headerlink" href="#a-team-of-specialist-chips" title="Permanent link">&para;</a></h2>
 <p>The 6502 CPU did not work alone. Atari’s custom chips divided the visual and
 audio labor:</p>
@@ -1602,6 +1640,17 @@ audio labor:</p>
 moving objects practical. The display list allowed different graphics modes to
 coexist vertically on one screen. In the hands of skilled programmers, it was
 less a fixed display than a script for constructing one line by line.</p>
+<figure aria-labelledby="atari-display-flow-title" class="diagram-flow" style="--flow-columns: 2;">
+<h3 class="diagram-flow__title" id="atari-display-flow-title">A source-bounded Atari display path<a class="headerlink" href="#atari-display-flow-title" title="Permanent link">&para;</a></h3>
+<p class="diagram-flow__summary">The processor prepared display information in memory, while custom chips read and turned it into the television picture.</p>
+<ol class="diagram-flow__track">
+<li><strong>6502 and RAM</strong><p>The CPU writes the display list and display data in memory.</p><span class="diagram-flow__relation">ANTIC reads that memory directly</span></li>
+<li><strong>ANTIC</strong><p>ANTIC reads via DMA and issues display instructions.</p><span class="diagram-flow__relation">Passes the display information onward</span></li>
+<li><strong>CTIA, or later GTIA variants</strong><p>The display chip produces the television signal and visible display.</p></li>
+</ol>
+<aside class="diagram-flow__aside"><strong>Parallel work by POKEY:</strong> audio, keyboard scanning and serial input/output operate alongside this simplified display path.</aside>
+<figcaption>Explanatory model of the source-bounded display path described in this chapter. It is not a circuit diagram.</figcaption>
+</figure>
 <div class="machine-grid">
   <div class="machine-card"><strong>Atari 400</strong><span>MEMBRANE KEYBOARD</span><br>Durable, approachable, game-forward.</div>
   <div class="machine-card"><strong>Atari 800</strong><span>FULL-TRAVEL KEYBOARD</span><br>Expandable, twin cartridge slots, serious intent.</div>

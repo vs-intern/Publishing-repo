@@ -1187,6 +1187,23 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="What every record must remember">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#source-network-flow-title" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How evidence remains connected to publication
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1581,6 +1598,23 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="What every record must remember">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#source-network-flow-title" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How evidence remains connected to publication
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1802,6 +1836,17 @@ scope, supported claims, limitations, rights state, ingestion date, verifier
 and last check. A durable claim record identifies its subject and predicate,
 qualifiers, confidence, evidence relationships, page use, review date and next
 review.</p>
+<figure aria-labelledby="source-network-flow-title" class="diagram-flow" style="--flow-columns: 2;">
+<h3 class="diagram-flow__title" id="source-network-flow-title">How evidence remains connected to publication<a class="headerlink" href="#source-network-flow-title" title="Permanent link">&para;</a></h3>
+<p class="diagram-flow__summary">Each stage keeps the scope and limitations of the previous one available for inspection.</p>
+<ol class="diagram-flow__track">
+<li><strong>Qualified source card</strong><p>Records identity, locator, scope, rights state, limitations and last check.</p><span class="diagram-flow__relation">Supports or contextualizes a bounded claim</span></li>
+<li><strong>Claim record</strong><p>States the proposition, qualifiers, confidence and evidence relationships.</p><ul class="diagram-flow__branches"><li>If sources conflict, narrow or attribute the claim, lower confidence, or leave it unresolved.</li></ul><span class="diagram-flow__relation">Names every published use</span></li>
+  <li><strong>Page use</strong><p>Connects the claim to the sentence or section where a reader encounters it.</p><ul class="diagram-flow__branches"><li>If a link fails, preserve the source identity and locator while link health is repaired.</li></ul><span class="diagram-flow__relation">Returns changes to review</span></li>
+  <li><strong>Review history</strong><p>Records who checked the relationship, when it was checked and when it is due again.</p><span class="diagram-flow__relation">Feeds corrections back through the network</span></li>
+</ol>
+<figcaption>Explanatory model of the publication's source-and-claim workflow. The ordered steps and branch text carry the meaning without relying on color or arrows.</figcaption>
+</figure>
 <p>This structure makes several failures visible:</p>
 <ul>
 <li>a link can break while the claim and its locator remain known;</li>
