@@ -35,17 +35,6 @@ body { letter-spacing: .005em; }
 .md-typeset h2 { margin-top: 2.2em; }
 .md-typeset code { border-radius: 2px; }
 
-.reading-progress {
-  position: fixed;
-  z-index: 10;
-  top: 2.4rem;
-  left: 0;
-  width: 0;
-  height: 3px;
-  background: linear-gradient(90deg, var(--retro-orange), var(--retro-amber), var(--retro-cyan));
-  box-shadow: 0 0 10px rgba(66, 217, 200, .45);
-}
-
 .hero {
   min-height: 30rem;
   margin: -1.5rem calc(50% - 50vw) 3rem;
@@ -245,15 +234,10 @@ body { letter-spacing: .005em; }
 @media (max-width: 44rem) {
   .hero { min-height: 34rem; background-position: 62% center; }
   .hero::before { background: linear-gradient(0deg, rgba(5,10,17,.95) 0%, rgba(5,10,17,.68) 70%, rgba(5,10,17,.2)); }
-  .reading-progress { top: 2.35rem; }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .reading-progress { transition: none !important; }
 }
 
 @media print {
-  .md-header, .md-sidebar, .md-footer, .reading-progress { display: none !important; }
+  .md-header, .md-sidebar, .md-footer { display: none !important; }
   .md-main__inner, .md-content { max-width: none; margin: 0; }
   .hero { margin: 0; min-height: 85vh; break-after: page; }
   a { color: inherit; }
